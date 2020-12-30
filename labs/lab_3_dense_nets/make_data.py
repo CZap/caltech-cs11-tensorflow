@@ -1,6 +1,7 @@
 import itertools as it
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 # Format: (x, y, radius)
 circles = [(0.6, -0.6, 0.2),
@@ -146,8 +147,8 @@ if __name__ == '__main__':
           (len(pos), len(neg)))
 
     # Save data
-    np.savetxt('./data/positives.txt', pos)
-    np.savetxt('./data/negatives.txt', neg)
+    np.savetxt('labs\lab_3_dense_nets\data\positives.txt', pos)
+    np.savetxt('labs\lab_3_dense_nets\data\\negatives.txt', neg)
 
     # Plot data
     plot_scene_true(axes=axes)
